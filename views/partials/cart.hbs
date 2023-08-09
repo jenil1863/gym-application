@@ -1,0 +1,33 @@
+<body>
+      {{#each name}}
+    <div class="details">
+        <p style="font-size: 22px;"><b>{{this.class}}</b></p>
+        <p style="font-size: 16px;"><b>{{this.time}} min</b></p>  
+        </div>  
+        <div class="removebutton">  
+        <form method="POST" action="/cartpage/remove/{{this._id}}">
+        <button>Remove</button>
+        </div>   
+        
+    </form>  
+     
+      <hr/>
+{{/each}}
+<div class="payments">
+ <div class="total">
+
+     <b>
+  <p style="font-size: 20px;">Sub-total: ${{subtotal}}</p>
+  <p style="font-size: 20px;">Tax: ${{tax}}</p>
+  <p style="font-size: 20px;">Total: ${{total}}</p>
+     </b>
+
+</div>
+<div class="confirm">
+    <form method="POST" action="/payment">
+      <input type="hidden" name="PaymentFromUser" value="{{total}}">
+      <button type="submit">Confirm</button>
+   </form>
+   </div>
+   </div>
+</body>

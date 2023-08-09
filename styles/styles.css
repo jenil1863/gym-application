@@ -1,0 +1,143 @@
+main {
+  margin-left: 20px;
+  padding: 30px;
+
+  border-radius: 10px;
+  text-align: left;
+}
+
+.text-field,
+.button-container {
+  width: 30%;
+  margin-bottom: 10px;
+}
+body {
+  background-color: rgba(162, 147, 190, 0.997);
+  font-family: Arial, sans-serif;
+}
+.form-layout {
+  width: 100%;
+  align-content: center;
+}
+.login-form {
+  margin-left: 10px;
+}
+.username,
+.password {
+  width: 100%;
+  padding: 10px 0;
+}
+.button {
+  padding: 10px 0;
+  width: 49%;
+}
+nav {
+  background-color: #8cd4d9;
+  height: 50px;
+  border-radius: 7px;
+  display: flex;
+
+  align-items: center;
+  padding: 0 20px;
+
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav a {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+hr {
+  padding: auto;
+}
+h1 {
+  text-align: center;
+  color: #000000;
+}
+
+nav a:hover {
+  background-color: rgb(173, 173, 173);
+}
+.container {
+  display: flex;
+}
+button {
+  cursor: pointer;
+}
+.image,
+.details {
+  width: fit-content;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.addcart button {
+  width: auto;
+  border-radius: 2px;
+  background-color: rgb(171, 158, 123);
+}
+img {
+  border-radius: 5px;
+  width: 270px;
+  height: 200px;
+  border: #ffffff;
+}
+
+.removebutton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.removebutton button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.removebutton button:hover {
+  background-color: #d32f2f;
+}
+
+.payments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.total {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.total p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.confirm button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.confirm button:hover {
+  background-color: #3e8e41;
+}

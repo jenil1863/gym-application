@@ -1,0 +1,20 @@
+<body>
+  <h1>Our Classes</h1>
+
+  {{#each name}}
+    <div class="container">
+      <div class="image">
+        <img src={{this.image}} alt="" height="100px" width="100px" />
+      </div>
+      <div class="details">
+        <p style="font-size: 32px;"><b>{{this.class}}</b></p>
+        <p><b>{{this.time}} min</b></p>
+        <div class="addcart">
+          <p><a href="/enroll/{{this._id}}"><button>add to Cart</button></a></p>
+        </div>
+      </div>
+    </div>
+    <hr />
+  {{/each}}
+
+</body>
